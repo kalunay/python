@@ -1,0 +1,12 @@
+{% extends 'main.html' %}
+{% block title %}Add News{% endblock %}
+{% block main %}
+    <h2>Add News</h2>
+    <div class="form">
+        <form action="" method="post">
+            {% include 'generic/form.html' %}
+            <div class="submit-button"><input type="submit" value="Add"></div>
+        </form>
+    </div>
+    <p><a href="{% url 'news_index' %}">Back</a></p>
+{% endblock %}

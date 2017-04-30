@@ -1,0 +1,16 @@
+{% extends 'main.html' %}
+{% load bbcode_tags %}
+{% block title %}Delete News :: {{ object.title }}{% endblock %}
+{% block main %}
+    <h2>Delete News</h2>
+    <h4>{{ object.title }}</h4>
+    <div>{{ object.content|bbcode|safe }}</div>
+    <p class="posted">{{ object.posted|date:'j.m.Y H:i:s' }}</p>
+    <div class="form">
+        <form action="" method="post">
+            {% csrf_tekon %}
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+    <p><a href="{% url 'news_index' %}">Back</a></p>
+{% endblock %}

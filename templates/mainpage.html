@@ -1,0 +1,12 @@
+{% extends "main.html" %}
+{% block title %}Main page{% endblock %}
+{% block main %}
+    <h2>Title</h2>
+    <h3>News</h3>
+    {% for object in news %}
+        <h4><a href="{% url 'news_detail' pk=object.pk %}">{{ object.title }}</a></h4>
+        <p>{{ object.description }}</p>
+        <p class="posted">{{ object.posted|date:'j.m.Y H:i:s' }}</p>
+    {% endfor %}
+    <h3>Recommended</h3>
+{% endblock %}

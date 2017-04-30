@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+#header {
+    text-align: center;
+    border-bottom: 1px #ccc solid;
+}
+#header h1 {
+    margin: 20px 0;
+    letter-spacing: 0.2em;
+}
+#leftmenu {
+    float: left;
+    width: 100px;
+    padding: 10px;
+}
+#leftmenu ul {
+    margin: 0px;
+    padding: 0px;
+}
+#leftmenu ul li {
+    front-size: larger;
+    list-style-type: none;
+    margin: 0 10px;
+}
+#leftmenu ul li a {
+    display: block;
+}
+#leftmenu ul li.indented {
+    margin-top: 20px;
+}
+#leftmenu ul li a:link, #leftmenu ul li a:visited,
+#leftmenu ul li a:active, #leftmenu ul li a:hover {
+    text-decoration: none;
+}
+#leftmenu ul li a:link, #leftmenu ul li:visited {
+    color: #0000ff;
+    background: #fff;
+}
+#leftmenu ul li a:active, #leftmenu ul li:hover {
+    color: #0000ff;
+    background: #000;
+}
+#leftmenu ul li a.current:link, #leftmenu ul li a.current:visited,
+#leftmenu ul li a.current:active, #leftmenu ul li a.current:hover {
+    color: #000;
+    background: #fff;
+}
+#main {
+    margin-left: 110px;
+    border-left: 1px #ccc solid;
+    padding: 10px;
+}
+#main h2:first-child {
+    margin: 0 0 10px 0;
+}
+#footer {
+    text-align: right;
+    border-top: 1px #ccc solid;
+    padding-right: 10px;
+}
+#footer p {
+    font-size: smaller;
+    font-style: italic;
+}
+.form {
+    width: 400px;
+    margin: 20px 0;
+}
+.bottom-indent {
+    margin-bottom: 50px;
+}
+.guestbook {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+}
+.guestbook .user {
+    font-weight: bold;
+}
+.guestbook .posted {
+    font-style: italic;
+    text-align: right;
+    width: 200px;
+}
+.guestbook .content {
+    padding-top: 20px;
+}
+.honeypot {
+    display: none;
+}
+#messages-list {
+    background: #eee;
+    padding: 5px;
+}
+#messages-list .ERROR{
+    background: #ff0000;
+}
+#pagination {
+    margin-top: 20px;
+}
+#pagination #previous-page {
+    float: left;
+}
+#pagination #num-pages {
+    float: center;
+}
+#pagination #next-page {
+    float: right;
+}
+.posted {font-style: italic; text-align: right;}
+.buttons {text-align: right}
